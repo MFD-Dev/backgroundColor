@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <style>
-    .container {
+    /* .container {
         display: flex;
         justify-content: space-between;
     }
@@ -22,29 +22,27 @@
     #btn-blue {
         color: blue;
         background-color: white;
-    }
+    } */
 </style>
 
     <body>
         
-
-        <label for="color-names" id="color-names">Choose a Color: </label>
-        <select name="color-names" id="color-names">
-          <option value="btn-red" id="btn-red">Btn-Red</option>
-          <option value="btn-green" id="btn-green">Btn-Green</option>
-          <option value="btn-blue" id="btn-blue">Btn-Blue</option>
+        <select onchange="handleOnChangeEvent(this.value)">
+            <option value="">Select Color</option>
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
         </select>
 
-        <button id="submit">Get Selected Values</button>
         <!-- <label for="color-names" id="color-names">Choose a Color: </label>
-        <select for="color-names" id="color-names">Choose a Color
-          <button onclick="myFunction()" id="dropbtn" >Dropdown</button> 
-          <div id="myDropdown" class="dropdown-content">
-          <option value="btn-red" id="btn-red">Btn-Red</option>
-          <option value="btn-green" id="btn-green">Btn-Green</option>
-          <option value="btn-blue" id="btn-blue">Btn-Blue</option>
-          </div> 
-        </select>           -->
+        <select name="color-names" id="color-names">
+          <option value="red" id="red">Btn-Red</option>
+          <option value="green" id="green">Btn-Green</option>
+          <option value="blue" id="blue">Btn-Blue</option>
+        </select> -->
+
+        <!-- <button id="submit">Get Selected Values</button> -->
+   
         
 
   <script src="app.js" ></script>  
@@ -53,32 +51,4 @@
 
 
 
-       <!-- <div class="container">
-        <div>          
-                <p id="p1" ><em>Click the button below to change the color.</em></p>
-             <div>
-            <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-            <div id="myDropdown" class="dropdown-content">
-                <button type="button" id="btn-red" > Click Here</button>
-                <button type="button" id="btn-green" > Click Here</button>
-                <button type="button" id="btn-blue" > Click Here</button>
-                   
-            </div>
-            </div>
-            - <button type="button" id="btn-red" > Click Here</button>
-            <button type="button" id="btn-green" > Click Here</button>
-            <button type="button" id="btn-blue" > Click Here</button> -->
-        <!-- </div> -->
-
-       
-
-
-            <!-- <select >
-                <option value="default">default</option>
-                <option value="red">red</option>
-                <option value="green">green</option>
-                <option value="blue">blue</option>
-            </select> -->
-        <!-- </div>
-    </div>  -->
+  
